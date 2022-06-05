@@ -46,148 +46,96 @@ CREATE TABLE If NOT EXISTS Collection_and_tracks (
 	);
 
 INSERT INTO Singers(name) 
-	VALUES('Roy Jones');
-INSERT INTO Singers(name)
-	VALUES('Jack Boswell');
-INSERT INTO Singers(name)
-	VALUES('Ronny Seedorf');
-INSERT INTO Singers(name)
-	VALUES('Ted Galacher');
-INSERT INTO Singers(name)
-	VALUES('Nick Rosentahl');
-INSERT INTO Singers(name)
-	VALUES('Paul Oakenfold');
-INSERT INTO Singers(name)
-	VALUES('Ferry Corsten');
-INSERT INTO Singers(name)
-	VALUES('David Guetta');
+VALUES
+	('Roy Jones'),
+	('Jack Boswell'),
+	('Ronny Seedorf'),
+	('Ted Galacher'),
+	('Nick Rosentahl'),
+	('Paul Oakenfold'),
+	('Ferry Corsten'),
+	('David Guetta');
 
 INSERT INTO Genre(title)
-	VALUES('Rock');
-INSERT INTO Genre(title)
-	VALUES('Pop');
-INSERT INTO Genre(title)
-	VALUES('Country');
-INSERT INTO Genre(title)
-	VALUES('Jazz');
-INSERT INTO Genre(title)
-	VALUES('Rap');
+VALUES
+	('Rock'),
+	('Pop'),
+	('Country'),
+	('Jazz'),
+	('Rap');
 
 INSERT INTO Albums(title, year_production)
-	VALUES('Venom', 1999);
-INSERT INTO Albums(title, year_production)
-	VALUES('Zorro', 2005);
-INSERT INTO Albums(title, year_production)
-	VALUES('Unity', 2009);
-INSERT INTO Albums(title, year_production)
-	VALUES('Russian beast', 2013);
-INSERT INTO Albums(title, year_production)
-	VALUES('Duckling', 2015);
-INSERT INTO Albums(title, year_production)
-	VALUES('Meteora', 2014);
-INSERT INTO Albums(title, year_production)
-	VALUES('Hero', 2010);
-INSERT INTO Albums(title, year_production)
-	VALUES('The Star', 2003);
+VALUES
+	('Venom', 1999),
+	('Zorro', 2005),
+	('Unity', 2009),
+	('Russian beast', 2013),
+	('Duckling', 2015),
+	('Meteora', 2014),
+	('Hero', 2010),
+	('The Star', 2003);
 
 INSERT INTO Tracks(id_album, title, duration)
-	VALUES(3, 'In forest', '3:25');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(8, 'Love', '3:41');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(6, 'Pig', '3:11');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(5, 'Bread', '3:33');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(1, 'Lonely', '3:51');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(7, 'Infest', '3:07');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(2, 'Session', '3:22');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(6, 'Numb', '4:02');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(7, 'Neo', '3:17');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(1, 'Mystery', '3:39');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(5, 'Shadow power', '3:49');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(4, 'Green hill', '3:19');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(8, 'Legendary', '3:30');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(2, 'Robo', '3:03');
-INSERT INTO Tracks(id_album, title, duration)
-	VALUES(7, 'Total War', '2:49');
+VALUES
+	(3, 'In forest', '3:25'),
+	(8, 'Love', '3:41'),
+	(6, 'Pig', '3:11'),
+	(5, 'Bread', '3:33'),
+	(1, 'Lonely', '3:51'),
+	(7, 'Infest', '3:07'),
+	(2, 'Session', '3:22'),
+	(6, 'Numb', '4:02'),
+	(7, 'Neo', '3:17'),
+	(1, 'Mystery', '3:39'),
+	(5, 'Shadow power', '3:49'),
+	(4, 'Green hill', '3:19'),
+	(8, 'Legendary', '3:30'),
+	(2, 'Robo', '3:03'),
+	(7, 'Total War', '2:49');
 
 INSERT INTO Collection(title, year_production)
-	VALUES('The Best', 2020);
-INSERT INTO Collection(title, year_production)
-	VALUES('Emotion', 2021);
-INSERT INTO Collection(title, year_production)
-	VALUES('Winter killer', 2019);
-INSERT INTO Collection(title, year_production)
-	VALUES('Nature', 2018);
-INSERT INTO Collection(title, year_production)
-	VALUES('Armageddon', 2022);
-INSERT INTO Collection(title, year_production)
-	VALUES('Firs day', 2020);
-INSERT INTO Collection(title, year_production)
-	VALUES('Luxury', 2017);
-INSERT INTO Collection(title, year_production)
-	VALUES('For you', 2019);
+VALUES
+	('The Best', 2020),
+	('Emotion', 2021),
+	('Winter killer', 2019),
+	('Nature', 2018),
+	('Armageddon', 2022),
+	('Firs day', 2020),
+	('Luxury', 2017),
+	('For you', 2019);
 
 INSERT INTO Genre_singers
-	VALUES(3, 1);
-INSERT INTO Genre_singers
-	VALUES(5, 2);
-INSERT INTO Genre_singers
-	VALUES(4, 3);
-INSERT INTO Genre_singers
-	VALUES(2, 4);
-INSERT INTO Genre_singers
-	VALUES(5, 5);
-INSERT INTO Genre_singers
-	VALUES(3, 6);
-INSERT INTO Genre_singers
-	VALUES(1, 7);
-INSERT INTO Genre_singers
-	VALUES(5, 8);
+VALUES
+	(3, 1),
+	(5, 2),
+	(4, 3),
+	(2, 4),
+	(5, 5),
+	(3, 6),
+	(1, 7),
+	(5, 8);
 
 INSERT INTO Albums_and_singers
-	VALUES(1, 8);
-INSERT INTO Albums_and_singers
-	VALUES(2, 7);
-INSERT INTO Albums_and_singers
-	VALUES(3, 5);
-INSERT INTO Albums_and_singers
-	VALUES(4, 3);
-INSERT INTO Albums_and_singers
-	VALUES(5, 1);
-INSERT INTO Albums_and_singers
-	VALUES(6, 2);
-INSERT INTO Albums_and_singers
-	VALUES(7, 4);
-INSERT INTO Albums_and_singers
-	VALUES(8, 6);
+VALUES
+	(1, 8),
+	(2, 7),
+	(3, 5),
+	(4, 3),
+	(5, 1),
+	(6, 2),
+	(7, 4),
+	(8, 6);
 
 INSERT INTO Collection_and_tracks
-	VALUES(1, 10);
-INSERT INTO Collection_and_tracks
-	VALUES(2, 9);
-INSERT INTO Collection_and_tracks
-	VALUES(3, 7);
-INSERT INTO Collection_and_tracks
-	VALUES(4, 2);
-INSERT INTO Collection_and_tracks
-	VALUES(5, 11);
-INSERT INTO Collection_and_tracks
-	VALUES(6, 4);
-INSERT INTO Collection_and_tracks
-	VALUES(7, 5);
-INSERT INTO Collection_and_tracks
-	VALUES(8, 14);
+VALUES
+	(1, 10),
+	(2, 9),
+	(3, 7),
+	(4, 2),
+	(5, 11),
+	(6, 4),
+	(7, 5),
+	(8, 14);
 
 SELECT title, year_production 
 	FROM Albums
@@ -204,11 +152,11 @@ SELECT title
 
 SELECT title
 	FROM Collection
-	WHERE year_production >= 2018 AND year_production <= 2020;
+	WHERE year_production BETWEEN 2018 AND 2020;
 
 SELECT name
 	FROM Singers
-	WHERE name NOT IN (' ');
+	WHERE name iLIKE ('% %');
 
 SELECT title
 	FROM Tracks
